@@ -23,3 +23,14 @@ function switchColor() {
     console.log(randomColor);
     characterBackground.style.backgroundColor = randomColor;
 }
+
+
+window.onscroll = function() {showTopBarOnScroll()};
+
+function showTopBarOnScroll() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topbar").style.top = "0px";
+    } else {
+        document.getElementById("topbar").style.top = "-50px";
+    }
+}
