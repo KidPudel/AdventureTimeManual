@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("topbar-holder").innerHTML = this.responseText;
             console.log(document.getElementById("topbar-holder"));
 
+            // when topbar added to the dom. 
             window.onscroll = moveTopbar;
         }
     }
