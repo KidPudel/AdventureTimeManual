@@ -10,25 +10,33 @@
 
 <body>
   <div id="topbar">
-    <p>Characters</p>
-    <p>Places</p>
+    <a href="#Characters">Characters</a>
+    <a href="">Places</a>
+    <a href="https://www.youtube.com/watch?v=8vQtUleZykQ&t=1s" target="_blank">learning c</a>
   </div>
-  <div class="manual">
+  <div id="manual">
     <h1>Adventure Time Manual</h1>
     <hr />
     <section>
-      <h2>Characters</h2>
-      <article class="character">
-        <img class="character-img" src="https://static.wikia.nocookie.net/adventuretimewithfinnandjake/images/f/f3/Original_Finn.png"
-          alt="finn" />
-        <article class="character-info">
-          <h3 class="character-name">Finn</h3>
-          <p>Finn the Human</p>
+      <div id="characters-interactive-header">
+        <h2>Characters</h2>
+        <button id="get-characters-btn">Get characters</button>
+      </div>
+      <template id="character-template">
+        <article class="character-space">
+          <img class="character-img" src="https://static.wikia.nocookie.net/adventuretimewithfinnandjake/images/f/f3/Original_Finn.png"
+            alt="finn" />
+          <article class="character-info">
+            <h3 class="character-name">Finn</h3>
+            <p class="character-description">Finn the Human</p>
+          </article>
         </article>
-      </article>
+      </template>
     </section>
   </div>
-  <script src="index.js"></script>
+  <script type="module" src="js/index.js"></script>
+  <script src="js/topbar.js"></script>
+  <script src="js/get-characters.js"></script>
 </body>
 
 </html>

@@ -16,14 +16,28 @@ body {
   width: 100%;
   top: -50px;
   transition: top 0.5s;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-.manual {
+#topbar a {
+  color: burlywood;
+}
+
+
+#tobar a:visited {
+  color: grey;
+}
+
+#topbar a:hover {
+  color:wheat;
+}
+
+#manual {
   margin: 20px;
   padding: 20px;
   background-color: rgb(100, 50, 150);
   border: 10px solid black;
-  height: 5000px;
 }
 
 h1 {
@@ -38,7 +52,7 @@ hr {
   border: 0;
 }
 
-.character {
+.character-space {
   display: flex;
   align-items: start;
   max-height: 20vh;
@@ -59,4 +73,30 @@ hr {
 .character-name {
   margin-top: 0;
   margin-bottom: 5px;
+}
+
+
+#get-characters-btn {
+  background-color: rgb(81, 55, 36);
+  color: burlywood;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  /* set with what we can manipulate and rate */
+  transition: border-radius 1s;
+}
+
+#get-characters-btn:hover { 
+  background-color: rgb(119, 78, 49);
+}
+
+#get-characters-btn:active {
+  background-color: rgb(60, 36, 31);
+}
+
+#characters-interactive-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
